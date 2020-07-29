@@ -61,6 +61,8 @@ header {
   -webkit-transition: 1s all ease;
   transition: 1s all ease;
   font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .header-container a:hover {
