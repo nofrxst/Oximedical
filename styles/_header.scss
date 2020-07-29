@@ -1,0 +1,51 @@
+
+header{
+    
+    
+    background: transparent;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    -webkit-transition: background-color .5s;
+}
+
+.header-container{
+    display: flex;
+   // background-color: #000;
+   justify-content: center;
+padding: 10px  0 ;
+    
+    
+    h1{
+        font-family: verdana;
+        padding-left: 10px;
+    }
+
+    ul{
+        display: flex;
+    }
+
+    li{
+        list-style: none;
+        padding: 10px 15px;
+        }
+
+        a{
+            font-family: verdana;
+            text-decoration: none;
+            color: white;
+            border: 1.5px  solid white;
+            border-radius: 18px;
+            padding: 2.5px 10px;
+            transition: 1s all ease;
+            font-size: 1rem;
+           
+            &:hover{
+                background-color: white;
+                color: black;
+            }
+
+         
+        }
+
+}

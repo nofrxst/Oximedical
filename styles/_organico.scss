@@ -1,0 +1,50 @@
+.cafeorganico{
+    background-image: url(../img/banner2.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    
+    .container-organico{
+        max-width: 1330px;
+        margin: auto;
+        
+        padding: 100px 50px;
+
+        h2{
+            color: white;
+        }
+        h3{
+            padding-top: 25px;
+            color: white;
+            font-family: verdana;
+
+        }
+        p{
+            padding-top: 25px;
+            text-align: justify;
+            color: white;
+            font-size: 1.2rem;
+            font-family: Verdana;
+            line-height: 30px;
+        }
+        .btn-ir{
+            padding-top: 50px;
+            padding-left: 40%;
+        }
+        button{
+            
+             border-radius: 15px;
+             border:none;
+             padding: 10px 65px;
+             font-family: arial;
+             font-size: 1rem;
+             background-color: rgb(250, 138, 46);
+             transition: 1s ease;
+            
+             &:hover{
+                background-color: rgb(255, 82, 29);
+                color: white;
+                
+             }
+    }
+}  
+}
