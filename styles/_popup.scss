@@ -1,0 +1,80 @@
+.overlay{
+    background: rgba(0,0,0,.3);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+
+    .popup{
+        background: white;
+        box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.274);
+        border-radius: 3px;
+        font-family: verdana;
+        padding: 20px;
+        text-align: center;
+        width: 600px;
+        height: 400px;
+        opacity: 0;
+        transition: .3s ease all;
+        transform:  scale(0.7);
+        a{
+            padding-left: 90%;
+        }
+        h3{
+            font-size: 36px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            opacity: 0;
+        }
+        h4{
+            font-size: 26px;
+            font-weight: 300;
+            margin-bottom: 40px;
+            opacity: 0;
+        }
+    }
+
+}
+
+.overlay.active{
+    visibility: visible;
+}
+
+.popup.active{
+    opacity: 1;
+    transform:  scale(1);
+
+   
+}
+
+.popup.active h3{
+    animation: entradaTitulo .8s ease .5s forwards;
+}
+.popup.active h4{
+    animation: entradaTitulo2 .8s ease .5s forwards;
+}
+
+@keyframes entradaTitulo {
+    from {
+        transform: translateY(-25px);
+        opacity: 0;
+    }
+    to{ transform: translateY(0);
+    opacity: 1;
+    }
+}
+
+@keyframes entradaTitulo2 {
+    from {
+        transform: translateY(+25px);
+        opacity: 0;
+    }
+    to{ transform: translateY(0);
+    opacity: 1;
+    }
+}
