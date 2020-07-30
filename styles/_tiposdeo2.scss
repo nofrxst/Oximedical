@@ -19,13 +19,18 @@
         background: rgba(31, 30, 30, 0.582);
         border-radius:10px  ; 
         border: 2px solid black;
+        transition: 0.5s ease all;
       //  box-shadow: 0 10px 10px black;
-        
+        &:hover{
+            background: rgb(15, 15, 15);
+            
+            box-shadow: 0 10px 10px black;
+        }
         div {
         img{
             position: absolute; 
             border-radius:10px 10px 0 0  ; 
-            object-fit: cover;
+            
             background: white;
             
              
@@ -39,6 +44,7 @@
             left: 0px;
             text-align: center;
 
+          
         }
         }
 
